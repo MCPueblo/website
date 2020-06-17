@@ -2175,7 +2175,7 @@
 			padding-right: 0.75em;
 			position: relative;
 		}
-		*/
+		
 
 			input[type="checkbox"] + label:before,
 			input[type="radio"] + label:before {
@@ -2249,7 +2249,7 @@
 		color: #999 !important;
 		opacity: 1.0;
 	}
-
+*/
 /* Box */
 
 	.box {
