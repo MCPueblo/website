@@ -1,0 +1,68 @@
+/* Accordion styles */
+.tabs {
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 2px 0 0 #e5e5e5;
+}
+
+.tab {
+  width: 100%;
+  color: white;
+  overflow: hidden;
+  border-bottom: 2px solid #ac4519;
+}
+.tab-label {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  padding: 1em;
+  background: #d95921;
+  font-weight: bold;
+  cursor: pointer;
+  /* Icon */
+}
+.tab-label:hover {
+  background: #ac4519;
+}
+.tab-label::after {
+  content: "\276F";
+  width: 1em;
+  height: 1em;
+  text-align: center;
+  -webkit-transition: all .35s;
+  transition: all .35s;
+}
+.tab-content {
+  max-height: 0;
+  padding: 0 1em;
+  color: #2c3e50;
+  background: white;
+  -webkit-transition: all .35s;
+  transition: all .35s;
+}
+.tab-close {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: end;
+          justify-content: flex-end;
+  padding: 1em;
+  font-size: 0.75em;
+  background: #d95921;
+  cursor: pointer;
+}
+.tab-close:hover {
+  background: #ac4519;
+}
+
+input:checked + .tab-label {
+  background: #ac4519;
+}
+input:checked + .tab-label::after {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+input:checked ~ .tab-content {
+  max-height: 100vh;
+  padding: 1em;
+}
