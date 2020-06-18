@@ -1,6 +1,7 @@
-@import url("fontawesome-all.min.css");
-@import url("accordion.css");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic");
+@import url("Germano-Bold.css");
+@import url("Germano-BoldOblique.css");
+@import url("fontawesome-all.min.css");
 
 /*
 	Alpha by HTML5 UP
@@ -150,6 +151,7 @@
 		font-weight: 300;
 		line-height: 1em;
 		margin: 0 0 0.5em 0;
+		font-family:'Germano-Bold';
 	}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -2023,6 +2025,7 @@
 		position: relative;
 		margin: 0 0 1.5em 0;
 		font-style: italic;
+		font-family:'Germano-Bold';
 	}
 
 	header h2 + p {
@@ -2061,6 +2064,7 @@
 			margin: 1.5em 0 0 0;
 			padding: 1.5em 0 0 0;
 			font-style: normal;
+			font-family: "Nunito", sans-serif;
 		}
 
 /* Form */
@@ -2282,6 +2286,11 @@
 				content: '';
 				display: block;
 			}
+			
+			.box.features .features-row.more section {
+                width: 100%;
+                padding-left: 3em !important;
+            }
 
 			.box.features .features-row section {
 				float: left;
@@ -2699,6 +2708,7 @@
 			font-weight: 300;
 			padding: 0 0.75em 0.75em 0.75em;
 			text-align: left;
+			font-family:'Germano-Bold';
 		}
 
 		table thead {
@@ -2762,6 +2772,7 @@
 		text-align: center;
 		text-decoration: none;
 		white-space: nowrap;
+		font-family:'Germano-Bold';
 	}
 
 		input[type="submit"]:hover,
@@ -2851,7 +2862,7 @@
 		input[type="reset"].primary,
 		input[type="button"].primary,
 		.button.primary {
-			background-color: #e89980;
+			background-color: hsl(18, 74%, 50%);
 			color: #ffffff !important;
 		}
 
@@ -2934,7 +2945,7 @@
 	}
 
 	#header {
-		background: #444;
+		background: hsla(18, 74%, 50%, 85%);
 		color: #bbb;
 		cursor: default;
 		height: 3.25em;
@@ -2970,6 +2981,7 @@
 			right: 0.75em;
 			top: 0;
 			vertical-align: middle;
+			font-family:'Germano-Bold';
 		}
 
 			#header nav > ul {
@@ -3003,7 +3015,7 @@
 					}
 
 						#header nav > ul > li a:not(.button).icon:before {
-							color: #999;
+							color: #fff;
 							margin-right: 0.5em;
 						}
 
@@ -3025,7 +3037,7 @@
 		#header input[type="button"],
 		#header .button {
 			background-color: transparent;
-			box-shadow: inset 0 0 0 2px #999;
+			box-shadow: inset 0 0 0 2px #FFF;
 			color: #fff;
 		}
 
@@ -3193,6 +3205,7 @@
 		#banner p {
 			font-size: 1.25em;
 			margin-bottom: 1.75em;
+			font-family:'Germano-Bold';
 		}
 
 		#banner input[type="submit"],
@@ -3306,8 +3319,8 @@
 /* CTA */
 
 	#cta {
-		background: #e89980;
-		color: #f9e6df;
+		background: #7a11da;
+		color: #fff;
 		padding: 3.5em 0 4em 0;
 		text-align: center;
 	}
@@ -3328,7 +3341,7 @@
 		#cta .button {
 			box-shadow: none;
 			background: #fff;
-			color: #e89980;
+			color: #7a11da;
 		}
 
 		#cta input[type="text"],
@@ -3553,7 +3566,7 @@
 					}
 
 					#navButton .toggle:before {
-						background: rgba(192, 192, 192, 0.75);
+						background: hsla(18, 74%, 50%, 85%);
 						border-radius: 6px;
 						color: #fff;
 						content: '\f0c9';
@@ -3899,3 +3912,67 @@
 			}
 
 	}
+
+/* Accordion styles */
+.tabs {
+	border-radius: 6px;
+	overflow: hidden;
+	box-shadow: 0 2px 0 0 #e5e5e5;
+	margin-top: 0.83em;
+  }
+  .tab {
+	width: 100%;
+	color: white;
+	overflow: hidden;
+  }
+  .tab-label {
+	display: -webkit-box;
+	display: flex;
+	-webkit-box-pack: justify;
+			justify-content: space-between;
+	padding: 0.75em;
+	background: hsl(18, 74%, 50%);
+	font-weight: bold;
+	cursor: pointer;
+	border-bottom: 2px solid hsl(18, 75%, 45%);
+	/* Icon */
+  }
+  .tab-label:checked {
+	border-bottom: solid 1px #e5e5e5;
+  }
+  .tab-label:hover {
+	background: hsl(18, 75%, 45%);
+  }
+  .tab-label::after {
+	content: "\276F";
+	width: 1em;
+	height: 1em;
+	text-align: center;
+	-webkit-transition: all .35s;
+	transition: all .35s;
+  }
+  .tab-content {
+	max-height: 0;
+	padding: 0 1em;
+	color: #2c3e50;
+	background: white;
+	-webkit-transition: all .35s;
+	transition: all .35s;
+	background-color: #f8f8f8;
+	border-left: solid 1px #e5e5e5;
+	border-right: solid 1px #e5e5e5;
+  }
+  .tab-content ul {
+	margin: 0 0 0 0;
+  }
+  input:checked + .tab-label {
+	background: hsl(18, 75%, 45%);
+  }
+  input:checked + .tab-label::after {
+	-webkit-transform: rotate(90deg);
+			transform: rotate(90deg);
+  }
+  input:checked ~ .tab-content {
+	max-height: 100vh;
+	padding: 1em;
+  }

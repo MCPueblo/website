@@ -5,16 +5,6 @@
     background: #fff url('./ajax-loader.gif') center center no-repeat;
 }
 
-/* Icons */
-@font-face
-{
-    font-family: 'slick';
-    font-weight: normal;
-    font-style: normal;
-
-    src: url('./fonts/slick.eot');
-    src: url('./fonts/slick.eot?#iefix') format('embedded-opentype'), url('./fonts/slick.woff') format('woff'), url('./fonts/slick.ttf') format('truetype'), url('./fonts/slick.svg#slick') format('svg');
-}
 /* Arrows */
 .slick-prev,
 .slick-next
@@ -27,8 +17,8 @@
 
     display: block;
 
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     padding: 0;
     -webkit-transform: translate(0, -50%);
     -ms-transform: translate(0, -50%);
@@ -36,7 +26,7 @@
 
     cursor: pointer;
 
-    color: transparent;
+    color: black;
     border: none;
     outline: none;
     background: transparent;
@@ -66,12 +56,13 @@
 .slick-prev:before,
 .slick-next:before
 {
-    font-family: 'slick';
-    font-size: 20px;
+    font-family: 'Font Awesome\ 5 Free';
+    font-weight: 900;
+    font-size: 30px;
     line-height: 1;
 
     opacity: .75;
-    color: white;
+    color: black;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -79,38 +70,38 @@
 
 .slick-prev
 {
-    left: -25px;
+    left: -20px;
 }
 [dir='rtl'] .slick-prev
 {
-    right: -25px;
+    right: -20px;
     left: auto;
 }
 .slick-prev:before
 {
-    content: '←';
+    content: '\f359';
 }
 [dir='rtl'] .slick-prev:before
 {
-    content: '→';
+    content: '\f35a';
 }
 
 .slick-next
 {
-    right: -25px;
+    right: -20px;
 }
 [dir='rtl'] .slick-next
 {
     right: auto;
-    left: -25px;
+    left: -20px;
 }
 .slick-next:before
 {
-    content: '→';
+    content: '\f35a';
 }
 [dir='rtl'] .slick-next:before
 {
-    content: '←';
+    content: '\f359';
 }
 
 /* Dots */
@@ -178,7 +169,7 @@
 .slick-dots li button:before
 {
     font-family: 'slick';
-    font-size: 6px;
+    font-size: 24px;
     line-height: 20px;
 
     position: absolute;
