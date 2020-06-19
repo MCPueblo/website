@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300;1,400&display=swap');
 @import url("Germano-Bold.css");
 @import url("Germano-BoldOblique.css");
 @import url("fontawesome-all.min.css");
@@ -112,7 +112,7 @@
 
 	body, input, select, textarea {
 		color: #777;
-		font-family: "Source Sans Pro", sans-serif;
+		font-family: "Roboto", sans-serif;
 		font-size: 16pt;
 		font-weight: 300;
 		line-height: 1.65em;
@@ -151,7 +151,7 @@
 		font-weight: 300;
 		line-height: 1em;
 		margin: 0 0 0.5em 0;
-		font-family:'Germano-Bold';
+		font-family:'Germano-Bold', sans-serif;
 	}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -2025,7 +2025,7 @@
 		position: relative;
 		margin: 0 0 1.5em 0;
 		font-style: italic;
-		font-family:'Germano-Bold';
+		font-family:'Germano-Bold', sans-serif;
 	}
 
 	header h2 + p {
@@ -2064,7 +2064,7 @@
 			margin: 1.5em 0 0 0;
 			padding: 1.5em 0 0 0;
 			font-style: normal;
-			font-family: "Nunito", sans-serif;
+			font-family: "Roboto", sans-serif;
 		}
 
 /* Form */
@@ -2708,7 +2708,7 @@
 			font-weight: 300;
 			padding: 0 0.75em 0.75em 0.75em;
 			text-align: left;
-			font-family:'Germano-Bold';
+			font-family:'Germano-Bold', sans-serif;
 		}
 
 		table thead {
@@ -2772,7 +2772,7 @@
 		text-align: center;
 		text-decoration: none;
 		white-space: nowrap;
-		font-family:'Germano-Bold';
+		font-family:'Germano-Bold', sans-serif;
 	}
 
 		input[type="submit"]:hover,
@@ -2985,7 +2985,7 @@
 				}
 
 			#header #title img {
-				border: 2px solid black;
+				border: 1px solid black;
 				border-radius: 6px;
 				width: 40px;
 				height: 40px;
@@ -3000,7 +3000,7 @@
 			right: 0.75em;
 			top: 0;
 			vertical-align: middle;
-			font-family:'Germano-Bold';
+			font-family:'Germano-Bold', sans-serif;
 		}
 
 			#header nav > ul {
@@ -3224,7 +3224,7 @@
 		#banner p {
 			font-size: 1.25em;
 			margin-bottom: 1.75em;
-			font-family:'Germano-Bold';
+			font-family:'Germano-Bold', sans-serif;
 		}
 
 		#banner input[type="submit"],
@@ -3623,6 +3623,7 @@
 				z-index: 10002;
 				background: #2b2b2b;
 				color: #bbb;
+				font-family: 'Germano-Bold', sans-serif;
 			}
 
 				#navPanel .link {
@@ -3939,7 +3940,7 @@
 	  
 	  /* Track */
 	  ::-webkit-scrollbar-track {
-		background: #f1f1f1;
+		background: #f5f5f5;
 	  }
 	  
 	  /* Handle */
@@ -3971,7 +3972,7 @@
 			justify-content: space-between;
 	padding: 0.75em;
 	background: hsl(18, 74%, 50%);
-	font-weight: bold;
+	font-family: "Germano-Bold", sans-serif;
 	cursor: pointer;
 	border-bottom: 2px solid hsl(18, 75%, 45%);
 	/* Icon */
@@ -4015,3 +4016,10 @@
 	max-height: 100vh;
 	padding: 1em;
   }
+
+  iframe.map {
+    width: 100%;
+    border: none;
+    overflow: hidden;
+    height: 700px;
+}
