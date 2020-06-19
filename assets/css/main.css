@@ -2976,6 +2976,7 @@
 
 		#header img {
 			border: 2px solid black;
+			border-radius: 6px;
 			width: auto;
 			height: 40px;
 			float: left;
