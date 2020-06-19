@@ -3,6 +3,7 @@ $(document).ready(function(){
       arrows: true,
       dots: true,
       slidesToShow: 3,
+      swipeToSlide: true,
       infinite: false,
       responsive: [
         {
@@ -18,9 +19,10 @@ $(document).ready(function(){
           }
         },
         {
-          breakpoint: 840,
+          breakpoint: 480,
           settings: {
             arrows: false,
+            slidesToShow: 2,
           }
         }
       ]
