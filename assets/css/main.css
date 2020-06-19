@@ -2957,8 +2957,7 @@
 		z-index: 10000;
 	}
 
-		#header h1 {
-			color: inherit;
+		#header #title {
 			height: inherit;
 			left: 1.25em;
 			line-height: inherit;
@@ -2966,23 +2965,27 @@
 			padding: 0;
 			position: absolute;
 			top: 0;
+			display: flex;
+			align-items: center;
 		}
 
-			#header h1 a {
-				color: #fff;
-				font-weight: 400;
-				border: 0;
+			#header #title h1 {
+				margin: 0;
 			}
 
-		#header img {
-			border: 2px solid black;
-			border-radius: 6px;
-			width: auto;
-			height: 40px;
-			float: left;
-			vertical-align: middle;
-			margin-right: 0.75em;
-		}
+				#header #title h1 a {
+					color: #fff;
+					font-weight: 400;
+					border: 0;
+				}
+
+			#header #title img {
+				border: 2px solid black;
+				border-radius: 6px;
+				width: auto;
+				height: 40px;
+				margin-right: 0.75em;
+			}
 
 		#header nav {
 			height: inherit;
