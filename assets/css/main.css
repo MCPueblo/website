@@ -2505,7 +2505,7 @@ body.landing #page-wrapper {
 	z-index: 10000;
 }
 
-#header #title {
+#header .title {
 	height: inherit;
 	left: 1.25em;
 	line-height: inherit;
@@ -2517,23 +2517,36 @@ body.landing #page-wrapper {
 	align-items: center;
 }
 
-#header #title h1 {
+nav .title {
+	height: inherit;
+	line-height: inherit;
+	margin: 0;
+	padding: 1em;
+	display: flex;
+	align-items: center;
+}
+
+#header .title a, nav .title a {
+	border: 0;
+
+	display: flex;
+	align-items: center;
+}
+
+#header .title a h1, nav .title a h1 {
+	color: #fff;
+	font-weight: 400;
+	
 	margin: 0;
 	font-size: 150%;
 }
 
-#header.alt #title h1 {
+#header.alt .title a h1 {
 	margin: 0;
 	font-size: 100%;
 }
 
-#header #title h1 a {
-	color: #fff;
-	font-weight: 400;
-	border: 0;
-}
-
-#header #title img {
+#header .title a img, nav .title a img {
 	border: 1px solid black;
 	border-radius: 6px;
 	width: 40px;

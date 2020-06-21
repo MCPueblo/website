@@ -47,6 +47,7 @@
 			$(
 				'<div id="navPanel">' +
 					'<nav>' +
+						$('.title')[0].outerHTML + 
 						$('#nav').navList() +
 					'</nav>' +
 				'</div>'
