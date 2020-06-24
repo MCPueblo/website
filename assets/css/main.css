@@ -1872,7 +1872,7 @@ input[type="checkbox"], input[type="radio"] {
 .box {
 	background: #fff;
 	border-radius: 8px;
-	box-shadow: 0 2px 0 0 #e5e5e5;
+	box-shadow: 0 2px 4px 0 #bebebe;
 	margin: 0 0 2em 0;
 	padding: 3em;
 }
@@ -2547,12 +2547,13 @@ nav .title {
 }
 
 #header .title a img, nav .title a img {
-	border: 1px solid black;
+	/*border: 1px solid black;*/
 	border-radius: 8px;
 	width: 40px;
 	height: 40px;
 	align-self: center;
 	margin-right: 0.75em;
+	box-shadow: 0 0 2px 0 #272727;
 }
 
 #header nav {
@@ -3376,7 +3377,7 @@ body.landing #main {
 .tabs {
 	border-radius: 8px;
 	overflow: hidden;
-	box-shadow: 0 2px 0 0 #e5e5e5;
+	box-shadow: 0 2px 4px 0 #bebebe;
 	margin-top: 0.83em;
 }
 
