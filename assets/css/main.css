@@ -2550,8 +2550,8 @@ nav .title {
 #header .title a img, nav .title a img {
 	/*border: 1px solid black;*/
 	border-radius: 8px;
-	width: 40px;
-	height: 40px;
+	width: 36px;
+	height: 36px;
 	align-self: center;
 	margin-right: 0.75em;
 	box-shadow: 0 0 2px 0 #272727;
