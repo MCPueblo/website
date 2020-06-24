@@ -1902,7 +1902,8 @@ input[type="checkbox"], input[type="radio"] {
 
 .box.features .features-row.more section {
 	width: 100%;
-	padding-left: 3em !important;
+	padding-left: 0;
+	padding-right: 0;
 }
 
 .box.features .features-row section {
@@ -3265,6 +3266,9 @@ body.landing #main {
 		margin-left: 0;
 		padding-left: 0;
 	}
+	.tabs {
+		margin: 2em 0 0 0 !important;
+	}
 }
 
 /* Mobile (Portrait) */
@@ -3310,7 +3314,7 @@ body.landing #main {
 	/* Box */
 	.box {
 		border-radius: 0;
-		box-shadow: none;
+		box-shadow: 0 2px 4px 0 #bebebe;
 		margin: 1em 0 0 0;
 		padding: 3em 1em !important;
 	}
@@ -3378,7 +3382,7 @@ body.landing #main {
 	border-radius: 8px;
 	overflow: hidden;
 	box-shadow: 0 2px 4px 0 #bebebe;
-	margin-top: 0.83em;
+	margin: 2em;
 }
 
 .tab {
