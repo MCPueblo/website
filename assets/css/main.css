@@ -2557,10 +2557,9 @@ nav .title {
 }
 
 #header .title a img, nav .title a img {
-	/*border: 1px solid black;*/
 	border-radius: 8px;
-	width: 36px;
-	height: 36px;
+	width: 48px;
+	height: 48px;
 	align-self: center;
 	margin-right: 0.75em;
 	box-shadow: 0 0 2px 0 #272727;
@@ -2965,6 +2964,11 @@ body.landing #main {
 	}
 	#banner h2 {
 		font-size: 3.5em;
+	}
+
+	#header .title a img, nav .title a img {
+		width: 42px;
+		height: 42px;
 	}
 }
 
