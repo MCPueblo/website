@@ -110,13 +110,22 @@ a {
 	-webkit-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 	-ms-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 	transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
-	border-bottom: dotted 1px;
-	color: #e89980;
+	border-bottom: solid 1px;
+	border-bottom-color: transparent;
+	color: hsl(25, 90%, 50%);
 	text-decoration: none;
 }
 
+a:visited {
+	color: hsl(25, 90%, 75%);
+}
+
+a:hover:visited {
+	border-bottom-color: hsl(25, 90%, 75%);
+}
+
 a:hover {
-	border-bottom-color: transparent;
+	border-bottom-color: hsl(25, 90%, 50%);
 }
 
 strong, b {
@@ -2058,7 +2067,7 @@ input[type="checkbox"], input[type="radio"] {
 }
 
 .icon.major.accent4 {
-	background: #ff7b25;
+	background: #f26c0d;
 	color: #ffffff;
 }
 
@@ -2427,16 +2436,16 @@ input[type="submit"].alt.icon:before, input[type="reset"].alt.icon:before, input
 }
 
 input[type="submit"].primary, input[type="reset"].primary, input[type="button"].primary, .button.primary {
-	background-color: hsl(18, 74%, 50%);
+	background-color: hsl(25, 90%, 50%);
 	color: #ffffff !important;
 }
 
 input[type="submit"].primary:hover, input[type="reset"].primary:hover, input[type="button"].primary:hover, .button.primary:hover {
-	background-color: #ecaa96;
+	background-color: hsl(25, 90%, 70%);
 }
 
 input[type="submit"].primary:active, input[type="reset"].primary:active, input[type="button"].primary:active, .button.primary:active {
-	background-color: #e4886a;
+	background-color: hsl(25, 100%, 60%);
 }
 
 input[type="submit"].disabled, input[type="submit"]:disabled, input[type="reset"].disabled, input[type="reset"]:disabled, input[type="button"].disabled, input[type="button"]:disabled, .button.disabled, .button:disabled {
@@ -2494,7 +2503,7 @@ body.landing #page-wrapper {
 }
 
 #header {
-	background: hsla(18, 74%, 50%, 85%);
+	background: hsla(25, 90%, 50%, 85%);
 	color: #bbb;
 	cursor: default;
 	height: 3.25em;
@@ -2710,7 +2719,7 @@ nav .title {
 }
 
 .dropotron li.active>a, .dropotron li.active>span, .dropotron li:hover>a, .dropotron li:hover>span {
-	background: #e89980;
+	background: hsl(25, 90%, 60%);
 	color: #ffffff;
 }
 
@@ -2874,7 +2883,7 @@ body.landing #main {
 /* CTA */
 
 #cta {
-	background: #7a11da;
+	background: hsl(270, 100%, 50%);
 	color: #fff;
 	padding: 3.5em 0 4em 0;
 	text-align: center;
@@ -2893,7 +2902,7 @@ body.landing #main {
 #cta input[type="submit"], #cta input[type="reset"], #cta input[type="button"], #cta .button {
 	box-shadow: none;
 	background: #fff;
-	color: #7a11da;
+	color: hsl(270, 100%, 50%);
 }
 
 #cta input[type="text"], #cta input[type="password"], #cta input[type="email"], #cta select, #cta textarea {
@@ -3071,7 +3080,7 @@ body.landing #main {
 		font-weight: 900;
 	}
 	#navButton .toggle:before {
-		background: hsla(18, 74%, 50%, 85%);
+		background: hsla(25, 90%, 50%, 85%);
 		border-radius: 8px;
 		color: #fff;
 		content: '\f0c9';
@@ -3367,13 +3376,13 @@ body.landing #main {
 /* Handle */
 
 ::-webkit-scrollbar-thumb {
-	background: hsl(18, 74%, 50%);
+	background: hsl(25, 90%, 50%);
 }
 
 /* Handle on hover */
 
 ::-webkit-scrollbar-thumb:hover {
-	background: hsl(18, 74%, 40%);
+	background: hsl(25, 90%, 45%);
 }
 
 /* Accordion styles */
@@ -3397,10 +3406,10 @@ body.landing #main {
 	-webkit-box-pack: justify;
 	justify-content: space-between;
 	padding: 0.75em;
-	background: hsl(18, 74%, 50%);
+	background: hsl(25, 90%, 50%);
 	font-family: "Germano-Bold", sans-serif;
 	cursor: pointer;
-	border-bottom: 2px solid hsl(18, 75%, 45%);
+	border-bottom: 2px solid hsl(25, 90%, 45%);
 	/* Icon */
 }
 
@@ -3409,7 +3418,7 @@ body.landing #main {
 }
 
 .tab-label:hover {
-	background: hsl(18, 75%, 45%);
+	background: hsl(25, 90%, 45%);
 }
 
 .tab-label::after {
@@ -3438,7 +3447,7 @@ body.landing #main {
 }
 
 input:checked+.tab-label {
-	background: hsl(18, 75%, 45%);
+	background: hsl(25, 90%, 45%);
 }
 
 input:checked+.tab-label::after {
