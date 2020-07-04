@@ -112,20 +112,20 @@ a {
 	transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 	border-bottom: solid 1px;
 	border-bottom-color: transparent;
-	color: hsl(25, 90%, 50%);
+	color: #B366FF;
 	text-decoration: none;
 }
 
 a:visited {
-	color: hsl(25, 90%, 75%);
+	color: #D9B3FF;
 }
 
 a:hover:visited {
-	border-bottom-color: hsl(25, 90%, 75%);
+	border-bottom-color: #D9B3FF;
 }
 
 a:hover {
-	border-bottom-color: hsl(25, 90%, 50%);
+	border-bottom-color: #B366FF;
 }
 
 strong, b {
@@ -2057,7 +2057,7 @@ input[type="checkbox"], input[type="radio"] {
 }
 
 .icon.major.accent2 {
-	background: #6b5b95;
+	background: #C68CFF;
 	color: #ffffff;
 }
 
@@ -2308,6 +2308,7 @@ table tbody tr:nth-child(2n+1) {
 
 table td {
 	padding: 0.75em 0.75em;
+	text-align: center;
 }
 
 table#recipe td {
@@ -2882,7 +2883,7 @@ body.landing #main {
 /* CTA */
 
 #cta {
-	background: hsl(270, 100%, 50%);
+	background: #864DBF;
 	color: #fff;
 	padding: 3.5em 0 4em 0;
 	text-align: center;
@@ -2901,7 +2902,7 @@ body.landing #main {
 #cta input[type="submit"], #cta input[type="reset"], #cta input[type="button"], #cta .button {
 	box-shadow: none;
 	background: #fff;
-	color: hsl(270, 100%, 50%);
+	color: #864DBF;
 }
 
 #cta input[type="text"], #cta input[type="password"], #cta input[type="email"], #cta select, #cta textarea {
