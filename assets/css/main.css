@@ -116,14 +116,6 @@ a {
 	text-decoration: none;
 }
 
-a:visited {
-	color: #D9B3FF;
-}
-
-a:hover:visited {
-	border-bottom-color: #D9B3FF;
-}
-
 a:hover {
 	border-bottom-color: #B366FF;
 }
@@ -150,7 +142,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-	color: inherit;
 	text-decoration: none;
 }
 
