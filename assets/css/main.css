@@ -32,6 +32,9 @@ body {
 ol, ul {
 	list-style: none;
 }
+ol ul {
+	margin: 0 0 0.5em 0;
+}
 
 blockquote, q {
 	quotes: none;
@@ -1872,7 +1875,7 @@ input[type="checkbox"], input[type="radio"] {
 .box {
 	background: #fff;
 	border-radius: 8px;
-	box-shadow: 0 2px 4px 0 #bebebe;
+	box-shadow: 0 2px 4px 0 #75757575;
 	margin: 0 0 2em 0;
 	padding: 3em;
 }
@@ -2505,6 +2508,7 @@ body.landing #page-wrapper {
 	top: 0;
 	width: 100%;
 	z-index: 10000;
+	box-shadow: 0 2px 4px 0 #75757575;
 }
 
 #header .title {
@@ -2656,6 +2660,7 @@ nav .title {
 	background: none;
 	color: rgba(255, 255, 255, 0.75);
 	position: absolute;
+	box-shadow: none;
 }
 
 #header.alt nav>ul>li a:not(.button).icon:before {
@@ -3319,7 +3324,7 @@ body.landing #main {
 	/* Box */
 	.box {
 		border-radius: 0;
-		box-shadow: 0 2px 4px 0 #bebebe;
+		box-shadow: 0 2px 4px 0 #75757575;
 		margin: 1em 0 0 0;
 		padding: 3em 1em !important;
 	}
@@ -3386,7 +3391,7 @@ body.landing #main {
 .tabs {
 	border-radius: 8px;
 	overflow: hidden;
-	box-shadow: 0 2px 4px 0 #bebebe;
+	box-shadow: 0 2px 4px 0 #75757575;
 	margin: 2em;
 }
 
