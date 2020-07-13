@@ -41,11 +41,11 @@
     <div id="page-wrapper">
         <header id="header">
             <section class="title">
-				<a href="index.html">
-					<img src="assets/images/logosmall.png">
-					<h1>MCPueblo</h1>
-				</a>
-			</section>
+                <a href="index.html">
+                    <img src="assets/images/logosmall.png">
+                    <h1>MCPueblo</h1>
+                </a>
+            </section>
             <nav id="nav">
                 <ul>
                     <li><a href="https://blog.mcpueblo.net">Blog</a></li>
@@ -66,10 +66,181 @@
         <section id="main" class="container">
             <header>
                 <h2>Puebleño</h2>
-                <p></p>
+                <p>Considering supporting MCPueblo? Start here.</p>
             </header>
             <div class="box">
                 <div>
+                    <h2>Puebleño</h2>
+                    <p>The Puebleño role is given to anybody who purchases any amount of points.</p>
+                </div>
+            </div>
+            <div class="box">
+                <div>
+                    <h2>Perks</h2>
+                    <p>To purchase perks with points, you must run the command <code>/perks</code> when in-game. You can
+                        still view the perks even without the Puebleño role. Below is the full list of perks available
+                        on the <b>Puebleño's Perk Parlor</b></p>
+                    <div class="table-wrapper">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Perk</th>
+                                    <th>Points (100 = $1)</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><a href="#setcolor">/setcolor</a></td>
+                                    <td>300</td>
+                                    <td>Make yourself unique by setting a chat color</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#disguise">/disguise (passive mobs)</a></td>
+                                    <td>400</td>
+                                    <td>Transform into any passive mob</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#disguise">/disguise (hostile mobs)</a></td>
+                                    <td>200</td>
+                                    <td>Transform into any hostile mob (Must purchase passive disguises first)</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#particles">/particles</a></td>
+                                    <td>400</td>
+                                    <td>Have a wide variety of particle effects follow you</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#maptool">/maptool</a></td>
+                                    <td>500</td>
+                                    <td>Place images in-game</td>
+                                </tr>
+
+                                <tr>
+                                    <td><a href="#hat">/hat</a></td>
+                                    <td>100</td>
+                                    <td>Wear any block as an item</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#nick">/nick (color/formatting only)</a></td>
+                                    <td>200</td>
+                                    <td>Change your username's color and formatting</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#nick">/nick (full customization)</a></td>
+                                    <td>400</td>
+                                    <td>Change your nickname to anything that follows the rules (Must purchase colored
+                                        names first)</td>
+                                </tr>
+                                <tr>
+                                    <td><b>Total</b></td>
+                                    <td>2500</td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <section class="box" id="maptool">
+                <span class="image featured"><img src="assets/images/perks/maptool.png" alt=""></span>
+                <h3>/maptool</h3>
+                <p>You can create maps with images using the above command. Instructions on how to use the
+                    command correctly are:</p>
+                <ul>
+                    <li><code>/tomap &lt;URL&gt;</code> - By default this will create a 1:1 pixel accurate
+                        map. Make sure the URL is a direct link to the image e.g. <a
+                            href="https://mcpueblo.net/assets/images/logo.png"
+                            target="_blank">https://mcpueblo.net/assets/images/logo.png</a> and not a link to a
+                        page like <a href="https://imgur.com/gallery/lhOLV"
+                            target="_blank">https://imgur.com/gallery/lhOLV</a></li>
+                    <li><code>/tomap &lt;URL&gt; resize</code> - This will resize the image to fit in a
+                        single map.</li>
+                    <li><code>/tomap &lt;URL&gt; resize-stretched [w] [h]</code> - This will stretch the image
+                        to
+                        the very edges of the map. You may also specific a width and height in blocks for the
+                        image to stretch to those dimensions.</li>
+                    <li><code>/tomap &lt;URL&gt; resize-covered [w] [h]</code> - This will resize the image to
+                        the edges until it can't be made larger without stretching. Specify a width and height
+                        in blocks for the image to cover without stretching.</li>
+                    <li><code>/maps</code> - Opens a GUI to manage all your maps.</li>
+                </ul>
+                <p>Here are a few rules in order to prevent abuse, not following these will result in a Rule #1
+                    violation:</p>
+                <ol>
+                    <li>Each player may have a maximum of 49 maps in total, equivalent to a single 7x7 image.
+                    </li>
+                    <li>You may not sell map images to anyone, not even in private.</li>
+                    <li>No inappropiate or offensive content on the maps.</li>
+                </ol>
+            </section>
+            <section class="box" id="nick">
+                <span class="image featured"><img src="assets/images/perks/nickname.png" alt=""></span>
+                <h3>/nick</h3>
+                <p>Set a nickname to change your name or color. Remember that the first nickname perk only
+                    supports setting your colors and formattings, and not change the actual name itself, for
+                    that you need to buy both perks. Here
+                    are a few examples, with JuanDelPueblo as the base username:</p>
+                <ul>
+                    <li><code>/nick &amp;6&amp;lJuanDelPueblo</code> = <b><span
+                                style="color: #FFAA00;">JuanDelPueblo</span></b> - Sets the color and formatting
+                        of your name. <a href="https://www.colorschemer.com/minecraft-color-codes/" target="_blank">Use
+                            the color codes from this guide with & as the prefix.</a> Color
+                        goes before formatting as seen in this example.</li>
+                    <li><code>/nick &amp;#b366ffJuan&amp;#00bd58Del&amp;#b366ffPueblo</code> = <span
+                            style="color: #b366ff">Juan</span><span style="color: #00bd58">Del</span><span
+                            style="color: #b366ff">Pueblo</span> - New 1.16 feature, you can now set ANY color
+                        possible with hex codes! Google "hex color picker" to find a color you want, then insert
+                        in the nickname as <code>&amp;#FFFFFF</code>, the 6 characters being the color.</li>
+                    <li><code>/nick &amp;aJuannie</code> = <span style="color: #55FF55">Juannie</span> - If you
+                        have both /nick perks, you can set any nickname you'll as long as you follow the
+                        below guidelines.</li>
+                </ul>
+                <p>You must also follow these guidelines for nicknames:</p>
+                <ol>
+                    <li>Do not imimate other members, especially do not imitate staff members.</li>
+                    <li>No inappropiate or offensive names.</li>
+                    <li>No hard-to-read names (don't use black or very dark colors, special symbols, strikethrough,
+                        etc.)</li>
+                </ol>
+            </section>
+            <div class="row">
+                <div class="col-6 col-12-narrower">
+                    <section class="box" id="particles">
+                        <span class="image featured"><img src="assets/images/perks/particles.png" alt=""></span>
+                        <h3>/particles</h3>
+                        <p>There are hundreds of possible particle effects and shapes, and you can combine multiple of
+                            them. </br>You can set arrow effects, effects that follow you, effects on block break/place, rotating cube, damage effects, attack effects, and more all using a simple GUI!</p>
+                    </section>
+                </div>
+                <div class="col-6 col-12-narrower">
+                    <section class="box" id="disguise">
+                        <span class="image featured"><img src="assets/images/perks/disguise.png" alt=""></span>
+                        <h3>/disguise</h3>
+                        <p>Remember to not abuse disguises, or they will be restricted or even removed altogether.</p>
+                        <ul>
+                            <li><code>/disguise &lt;mob&gt;</code> - Disguise as mob</li>
+                            <li><code>/disguiseviewself</code> - Toggle between viewing your own disguise or not
+                                (recommended off for large mobs)</li>
+                            <li><code>/undisguise</code> - Removes your disguise</li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6 col-12-narrower">
+                    <section class="box" id="hat">
+                        <span class="image featured"><img src="assets/images/perks/hat.png" alt=""></span>
+                        <h3>/hat</h3>
+                        <p>Any blocks can become a helmet, including banners.</p>
+                    </section>
+                </div>
+                <div class="col-6 col-12-narrower">
+                    <section class="box" id="setcolor">
+                        <span class="image featured"><img src="assets/images/perks/color.png" alt=""></span>
+                        <h3>/setcolor</h3>
+                        <p>Coming soon!</p>
+                    </section>
                 </div>
             </div>
         </section>
